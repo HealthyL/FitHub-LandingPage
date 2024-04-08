@@ -32,5 +32,69 @@
             <i class="fa-solid fa-xmark"></i>
         </label>
     </header>
+    <section class="inicio" id="inicio">
+        <div class="inicio-container">
+            <div class="inicio-izquierda">
+                <h2>Bienes personalizado y efectivo con</h2>
+                <h1>FIT HUB</h1>
+                <p>Alcanza tus metas de salud y fitness con nuestra plataforma integral.</p>
+                <div class="boton-empezar">
+                    <a href="signup.html">Empezar Ahora</a>
+                </div>
+            </div>
+            <div class="inicio-derecha">
+                <img src="src/assets/mujer-inicio.png">
+            </div>
+        </div>
+    </section>
+    <section class="como-funciona" id="como-funciona">
+        <div class="como-funciona-container">
+            <div class="cm-izq-der">
+                <div class="cm-izquierda">
+                    <p>CREA TU EXPERIENCIA DE <b>ENTRENAMIENTO ONLINE</b> EN MINUTOS</p>
+                </div>
+                <div class="cm-derecha">
+                    <img src="src/assets/InsidePage.png">
+                </div>
+            </div>
+            <div class="cm-pasos">
+
+            </div>
+        </div>
+    </section>
+    <section class="planes" id="planes">
+        <div class="planes-container">
+
+
+        </div>
+    </section>
+    <section class="contactanos" id="contactanos">
+        <div class="contactanos-container">
+            <h2 class="title-section">Contáctanos</h2>
+            <div class="form-container">
+                <form id="contact-form" action="procesar_formulario.php" method="post">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required aria-required="true"
+                            placeholder="Introduce tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required aria-required="true"
+                            placeholder="Introduce tu correo electrónico">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" required aria-required="true"
+                            placeholder="Introduce tu mensaje"></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+                <div id="mensaje-exito" style="display: none;">
+                    <p>Su consulta se ha enviado exitosamente. nos contactaremos con usted </p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
