@@ -109,3 +109,81 @@ header .navbar-list a:not(:last-child){
 header .navbar-list a:hover{
     color: var(--primary-green);
 }
+/*INICIO*/
+
+
+/*¿COMO FUNCIONA?*/
+
+
+/*PLANES*/
+
+
+/*CONTACTANOS*/
+.contactanos-container {
+    width: 60%;
+    text-align: center;
+    text-align: center;
+    padding: 50px 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.form-container {
+    text-align: center;
+    box-shadow: 0px 0px 1
+}
+
+.contact-container label{
+    color:var(--gray-2);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--secondary-green);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff; /* Rellenado de blanco */
+    color: #555555; /* Letras matizadas */
+    font-size: 1em;
+    transition: border-color 0.3s; /* Transición suave del color del borde */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #333333; /* Borde al enfocar */
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1em;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+    background-color: #555555;
+    color: #ffffff;
+}
