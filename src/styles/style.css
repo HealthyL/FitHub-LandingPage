@@ -116,7 +116,77 @@ header .navbar-list a:hover{
 
 
 /*PLANES*/
+.section_planes {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    padding: 100px 0;
+   
+}
+.planes-container {
+    width: 16%; /* Ajustado para que quepan los tres planes en una fila */
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center; /* Alineación centrada del texto */
+    margin-right: 2%; 
+}
 
+.subtitulo2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--primary-green); /* Cambiado a color primario */
+    position: relative; /* Posición relativa para la línea */
+}
+.subtitulo2::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Posición debajo del título */
+    left: 50%; /* Centrado horizontal */
+    transform: translateX(-50%);
+    width: 150px; /* Longitud de la línea */
+    height: 1px; /* Grosor de la línea */
+    background-color: #4B4B4B; /* Color de la línea */
+}
+
+.table {
+    list-style-type: none;
+    padding: 6px;
+}
+
+.column {
+    margin-bottom: 10px;
+    color: var(--gray-2); /* Cambiado a gris */
+    text-align: justify;
+}
+
+.btn {
+    display: block;
+    width: 86%;
+    text-align: center;
+    background-color: var(--primary-green); /* Cambiado a color primario */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 0;
+    border-radius: 19px;
+    transition: background-color 0.3s ease;
+    position: relative; /* Posición relativa para el pseudo-elemento */
+    
+}
+.btn::before {
+    content: '';
+    position: absolute;
+    top: -5px; /* Posición arriba del botón */
+    left: 50%; /* Centrado horizontal */
+    transform: translateX(-50%);
+    width: 150px; /* Longitud de la línea */
+    height: 1px; /* Grosor de la línea */
+    background-color: #4B4B4B; /* Color de la línea */
+}
+.btn:hover {
+    background-color: var(--secondary-green); /* Cambiado a color secundario */
+}
 
 /*CONTACTANOS*/
 .contactanos-container {
@@ -186,4 +256,63 @@ button[type="submit"]:hover,
 button[type="submit"]:focus {
     background-color: #555555;
     color: #ffffff;
+}
+
+/*footer*/
+
+.footer-container {
+    background-color:var(--primary-green);
+}
+
+.content-container {
+    background-color: var(--primary-lightblue);
+    display: flex;
+}
+
+.img-footer-logo {
+    margin-top: 14%;
+    margin-left: 50%;
+    width: 30%;
+}
+.footer-copyright{
+    text-align: center;
+}
+.subtitle {
+    font-size: 170%;
+    color: var(--primary-white);
+}
+
+.footer-link {
+    margin-left: 5%;
+    font-size: 120%;
+    color: var(--primary-white);
+}
+
+.footer-community{
+    margin-top: 2%;
+    margin-left: 3%;
+    text-align: left;
+}
+.footer-service{
+    margin-top: 2%;
+    margin-left: 6%;
+    text-align: left;
+}
+
+.footer-followUs {
+    margin-top: 2%;
+    margin-left: 3%;
+    text-align: left;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ul li::marker {
+    color: var(--primary-white);
+}
+
+.footer-copyright {
+    color: var(--primary-white);
 }
