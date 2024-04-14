@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/styles/style.css">
     <link rel="icon" href="src/assets/icono.ico" type="image/x-icon">
@@ -26,42 +27,44 @@
             <a href="#contactanos" class="navbar-link">Contáctanos</a>
             <a href="login.html" class="navbar-link" id="log-in">Iniciar Sesión</a>
             <a href="signup.html" class="navbar-link" id="sign-up">Crear Cuenta</a>
+            <div class="nav__close" id="nav-close">
+                <i class='bx bx-x'></i>
+              </div>
+            </div>
+      
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+              <i class='bx bx-grid-alt'></i>
+            </div>
         </nav>
+
         <label for="check">
             <i class="fa-solid fa-bars"></i>
             <i class="fa-solid fa-xmark"></i>
         </label>
     </header>
-    <section class="inicio" id="inicio">
-        <div class="inicio-container">
-            <div class="inicio-izquierda">
-                <h2>Bienes personalizado y efectivo con</h2>
-                <h1>FIT HUB</h1>
-                <p>Alcanza tus metas de salud y fitness con nuestra plataforma integral.</p>
-                <div class="boton-empezar">
-                    <a href="signup.html">Empezar Ahora</a>
-                </div>
-            </div>
-            <div class="inicio-derecha">
-                <img src="src/assets/mujer-inicio.png">
-            </div>
-        </div>
-    </section>
-    <section class="como-funciona" id="como-funciona">
-        <div class="como-funciona-container">
-            <div class="cm-izq-der">
-                <div class="cm-izquierda">
-                    <p>CREA TU EXPERIENCIA DE <b>ENTRENAMIENTO ONLINE</b> EN MINUTOS</p>
-                </div>
-                <div class="cm-derecha">
-                    <img src="src/assets/InsidePage.png">
-                </div>
-            </div>
-            <div class="cm-pasos">
 
-            </div>
-        </div>
-    </section>
+
+   <!--==================== inicio ====================-->
+  <section class="inicio" id="inicio">
+    <div class="inicio__container">
+      <div class="inicio__data">
+        <h1 class="inicio__description">
+          Bienestar <span class="highlight-color">personalizado</span> y efectivo con <span class="fit-color">fit</span> <span class="hub-color">hub</span>
+        </h1>
+        <p>
+          Alcanza tus metas de salud y
+          fitness con nuestra plataforma
+          integral.
+        </p>
+        <a href="#adopta" class="inicio__button" style="color: black;">
+          Empezar Ahora
+        </a>
+      </div>
+    </div>
+  </section>
+
+    <!--==================== Planes ====================-->
     <section class="planes" id="planes">
         <section class="section_planes" id="planes">
             <div class="planes-container">
@@ -161,7 +164,7 @@
                 <ul class="footer-list">
                     <li><a href="https://www.instagram.com/" class="footer-link" target="_blank">Instagram</a></li>
                     <li><a href="https://www.facebook.com/" class="footer-link" target="_blank">Facebook</a></li>
-                    <li><a href="https://twitter.com/home/" class="footer-link" target="_blank">Twitter</a></li>
+                    <li><a href="https://twitter.com/inicio/" class="footer-link" target="_blank">Twitter</a></li>
                 </ul>
             </div>
         </div>
