@@ -107,13 +107,86 @@ header .navbar-list a:not(:last-child){
 }
 
 header .navbar-list a:hover{
-    color: var(--primary-green);
+  color: var(--primary-white);
+  background-color: var(--secondary-green);    
+}
+header label {
+  display: none;
+}
+
+#check {
+  z-index: 3;
+  display: none
 }
 /*INICIO*/
 
 
+.highlight-color {
+  color: #8CB500;
+}
+
+.fit-color {
+  color: #8CB500;
+}
+
+.hub-color {
+  color: #C5D951;
+}
+
+.inicio__button {
+  background-color: #C5D951;
+}
+
+.inicio__button:hover {
+  background-color: #ACCC4C;
+}
+
 /*¿COMO FUNCIONA?*/
 
+
+.como-funciona {
+  background-color: #F0F0F0;
+  padding: 4rem 0;
+}
+.como-funciona .container {
+  text-align: center;
+}
+.como-funciona h2 {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.como-funciona__title {
+  font-size: 8rem; 
+  color: #8CB500; 
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.como-funciona p {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.como-funciona__text {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.como-funciona__text .highlight-color {
+  color: #8CB500;
+}
+.entrenamiento-online {
+  color: #8CB500; /* Color deseado */
+}
 
 /*PLANES*/
 .section_planes {
@@ -319,36 +392,6 @@ ul li::marker {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
-
-:root {
-  --header-height: 3.5rem;
-  --first-color: hsl(0, 0%, 100%);
-  --text-color: hsl(38, 8%, 8%);
-  --body-font: 'Space Grotesk', sans-serif;
-  --biggest-font-size: 1.5rem;
-  --normal-font-size: .938rem;
-  --smaller-font-size: .75rem;
-}
-
 /*Responsive typography*/
 @media screen and (min-width: 1024px) {
   :root {
@@ -366,7 +409,7 @@ ul li::marker {
 
 html,
 body {
-  font-family: var(--body-font);
+
   font-size: var(--normal-font-size);
   font-weight: 500;
   color: var(--text-color);
@@ -388,108 +431,6 @@ a {
   margin-right: 1rem;
 }
 
-/*=============== HEADER & NAV ===============*/
-.header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  background: rgb(255, 255, 255);
-  box-shadow: 0 4px 41px rgb(14 55 54 / 14%);
-  transition: 0.2s;
-  padding: 8px 10%;
-}
-
-.nav {
-  height: var(--header-height);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav__logo,
-.nav__toggle {
-  color: var(--text-color);
-  display: inline-flex;
-}
-
-.nav__logo {
-  font-weight: 700;
-}
-
-.nav__toggle {
-  font-size: 1.25rem;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 767px) {
-  .nav__menu {
-    position: fixed;
-    background-color: var(--first-color);
-    left: 0;
-    top: -100%;
-    width: 100%;
-    padding: 5rem 0 4rem;
-    border-radius: 0 0 1.5rem 1.5rem;
-    box-shadow: 0 2px 4px hsla(38, 4%, 15%, .15);
-    transition: .4s;
-  }
-}
-
-.nav__list {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  row-gap: 2rem;
-}
-
-.nav__link {
-  color: var(--text-color);
-}
-
-.nav_button {
-  padding: 10px 20px;
-  background-color:#4e2823;
-  color: #000000;
-  border-radius: 20px;
-}
-
-.nav_button:hover {
-  background-color:#32120E;
-}
-
-@media screen and (max-width: 767px) {
-  .nav_button {
-    background-color: transparent;
-    border: none;
-    color:black;
-  }
-  
-  .nav_button.text-only {
-    background-color: transparent;
-    color: #4e2823;
-  }
-}
-
-.nav__link:hover{
-  color:#69fa30;
-}
-
-.nav__close {
-  position: absolute;
-  top: 1rem;
-  right: 1.5rem;
-  font-size: 1.5rem;
-  color: var(--text-color);
-  cursor: pointer;
-}
-
-
-/* Show menu */
-.show-menu {
-  top: 0;
-}
 
 /*=============== inicio ===============*/
 .inicio {
@@ -526,8 +467,7 @@ a {
 .inicio__button {
   margin-top: 2rem;
   display: inline-block;
-  background-color: #FA9630;
-  color: #000000;
+  color: var(--primary-white);
   padding: .80rem 1.5rem;
   border-radius: 3rem;
   transition: .4s;
@@ -545,7 +485,15 @@ a {
   align-self: flex-end;
 }
 
-@media (max-width: 606px) {
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+  .inicio {
+    padding-top: 7rem;
+  }
+}
+@media screen and (max-width: 960px) {
   .inicio__container {
     position: absolute;
     top: 54%;
@@ -559,39 +507,80 @@ a {
   .inicio__data p{
     font-size: 1rem;
   }
-  .inicio{
-    background: url(https://raw.githubusercontent.com/SI385-2301-SS4A-Grupo6/Landing-Page/main/assets/img/back-opacity.png);
-    background-size: cover;
-    background-position: center;
-  }
+  header a {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background:none ;
+}
+header .navbar-list {
+  display: none;
 }
 
-
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
-@media screen and (max-width: 320px) {
-  .inicio {
-    padding-top: 7rem;
-  }
+header .navbar-list a {
+  color: var(--primary-green);
 }
 
-/* For medium devices */
-@media screen and (min-width: 767px) {
-  .nav {
-    height: calc(var(--header-height) + 1.5rem);
-  }
-
-  .nav__toggle,
-  .nav__close {
-    display: none;
-  }
-
-  .nav__list {
-    flex-direction: row;
-    column-gap: 3.5rem;
-  }
+.logo {
+  display: none;
 }
 
+header label {
+  padding: 0.8em;
+  display: block;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+  transition-property: color;
+}
+
+.fa-bars {
+  color: var(--primary-green);
+}
+
+label:hover {
+  color: var(--primary-green);
+}
+
+label .fa-xmark {
+  display: none;
+}
+
+#check:checked~header .navbar-list {
+  z-index: 2;
+  position: fixed;
+  background: var(--primary-yellow);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#check:checked~header .navbar-list a {
+  font-weight: 700;
+  margin-right: 0;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+  background-color:var(--primary-yellow);
+}
+#sign-up{
+  color: var(--primary-green)
+}
+
+#check:checked~header label .fa-bars {
+  display: none;
+}
+
+#check:checked~header label .fa-xmark {
+  z-index: 2;
+  display: block;
+  position: fixed;
+}
+}
 /* For large devices */
 
 @media screen and (min-width: 1048px) {
@@ -620,74 +609,3 @@ a {
   }
 }
 
-
-.highlight-color {
-  color: #8CB500;
-}
-
-.fit-color {
-  color: #8CB500;
-}
-
-.hub-color {
-  color: #C5D951;
-}
-
-.inicio__button {
-  background-color: #C5D951;
-}
-
-.inicio__button:hover {
-  background-color: #ACCC4C;
-}
-
-.nav_button {
-  background-color: rgb(255, 255, 255);
-}
-
-.nav_button:hover {
-  background-color: #ffffff;
-}
-.como-funciona {
-  background-color: #F0F0F0;
-  padding: 4rem 0;
-}
-.como-funciona .container {
-  text-align: center;
-}
-.como-funciona h2 {
-  font-size: 4rem;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-.como-funciona__title {
-  font-size: 8rem; 
-  color: #8CB500; 
-  text-align: center;
-  margin-bottom: 1rem;
-}
-.como-funciona p {
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-.como-funciona__text {
-  text-align: left;
-  margin-bottom: 1rem;
-}
-.image-container {
-  display: flex;
-  justify-content: center;
-}
-
-.image-container img {
-  max-width: 100%;
-  height: auto;
-}
-
-.como-funciona__text .highlight-color {
-  color: #8CB500;
-}
-.entrenamiento-online {
-  color: #8CB500; /* Color deseado */
-}
